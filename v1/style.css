@@ -34,6 +34,7 @@ nav{
     align-items: center;
     height: 8vh;
     font-family: Arial;
+    box-shadow: #d6d6d6 0px 0px 10px;
 }
 .nav-list{
     list-style: none;
@@ -68,7 +69,7 @@ nav{
         right: 0;
         width: 50vw;
         height: 92vh;
-        background: #D9F0FF;
+        background: #FFFFFF;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -141,6 +142,24 @@ h2 {
 .nav__link{
     display: flex;
 }
-.box{
-    padding: 2rem;
+.row{
+    padding: 40px;
+    position: absolute;
+    width: auto;
+    height: 300;
+    margin: 27px;
+    background: #ECECEC;
+    border-radius: 15px;
+    text-align: start;
+}
+.row2 {
+    padding: 40px;
+    position: absolute;
+    width: auto;
+    height: 300;
+    margin: 27px;
+    background: #ECECEC;
+    border-radius: 15px;
+    text-align: start;
+    align-self: flex-end;
 }
