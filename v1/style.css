@@ -142,6 +142,7 @@ h2 {
 .nav__link{
     display: flex;
 }
+
 .row{
     padding: 40px;
     position: absolute;
@@ -151,10 +152,37 @@ h2 {
     background: #ECECEC;
     border-radius: 15px;
     text-align: start;
+    font-stretch: ;
 }
 .row2 {
     padding: 40px;
-    position: absolute;
+    position: relative;
+    top: 290px;
+    width: 50%;
+    height: 50%;
+    margin: 27px;
+    background: #ECECEC;
+    border-radius: 15px;
+    text-align: start;
+    align-self: flex-end;
+}
+.row3 {
+    padding: 40px;
+    position: relative;
+    top: 290px;
+    width: 50%;
+    height: 300;
+    margin: 27px;
+    background: #ECECEC;
+    border-radius: 15px;
+    text-align: start;
+    align-self: flex-end;
+}
+.row4 {
+    padding: 40px;
+    position: relative;
+    top: 10%;
+    left: 56%;
     width: auto;
     height: 300;
     margin: 27px;
