@@ -1,18 +1,10 @@
-body, html {
-    box-sizing: border-box;
-    margin: 0 0 55px 0;
-    width: 100%;
-    height: 100%;
-    scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif;
-}
 header {
     grid-area: header;
 }
 /* cabeçalho */
 * {
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 /* botões do cabeçalho */
 a {
@@ -63,9 +55,12 @@ nav{
     transition: 0.3s;
 }
 
-@media (max-width: 999px){
+@media screen and (max-width: 999px){
     body{
         overflow-x: hidden;
+    }
+    .row, .navbar {
+        flex-direction: column;
     }
     .nav-list {
         position: absolute;
@@ -73,7 +68,7 @@ nav{
         right: 0;
         width: 50vw;
         height: 92vh;
-        background: #16A79D;
+        background: #40b671;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -140,8 +135,9 @@ nav{
 }
 
 .container{
+    display: flex;
     position: relative;
-}
+}/*
 .row{
     padding: 20px;
     position: relative;
@@ -184,4 +180,68 @@ nav{
     border-radius: 15px;
     text-align: start;
     background: #F4AC42;
+} */
+
+.row {
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Main column */
+.main {
+    flex: 70%;
+    padding: 20px;
+    width: auto;
+    margin: 27px;
+    background: #F4AC42;
+    border-radius: 15px;
+    text-align: start;
+    color: white;
+}
+  #blockOne {
+    margin: 27px;
+    padding: 20px;
+    background: #40b671;
+    border-radius: 15px;
+    text-align: start;
+    color: white;
+  }
+  #blockTwo {
+    padding: 20px;
+    margin: 27px;
+    background: #CF4858;
+    border-radius: 15px;
+    text-align: start;
+    color: white;
+  }
+  #blockThree {
+    padding: 20px;
+    margin: 27px;
+    background: #6F9EB0;
+    border-radius: 15px;
+    text-align: start;
+  }
+  #blockFour {
+    padding: 20px;
+    margin: 27px;
+    background: #F6624A;
+    border-radius: 15px;
+    text-align: start;
+  }
+  .side {
+    flex: 30%;
+    padding: 20px;
+    width: auto;
+    margin: 27px;
+    background: #F4AC42;
+    border-radius: 15px;
+    text-align: start;
+    color: white;
+}
+.footer {
+    flex: 100%;
+    background-color: #40b671;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-align: center;
 }
