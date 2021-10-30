@@ -141,10 +141,9 @@ nav{
 
 .container{
     position: relative;
-    padding: 10px;
 }
 .row{
-    padding: 40px;
+    padding: 20px;
     position: relative;
     width: auto;
     height: 300;
@@ -155,7 +154,7 @@ nav{
     color: white;
 }
 .row2 {
-    padding: 40px;
+    padding: 20px;
     position: relative;
     width: auto;
     height: auto;
@@ -166,7 +165,7 @@ nav{
 }
 
 .row3 {
-    padding: 40px;
+    padding: 20px;
     position: relative;
     width: auto;
     height: auto;
@@ -177,7 +176,7 @@ nav{
 }
 
 .row4 {
-    padding: 40px;
+    padding: 20px;
     position: relative;
     width: auto;
     height: auto;
