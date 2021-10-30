@@ -6,6 +6,9 @@ body, html {
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
+header {
+    grid-area: header;
+}
 /* cabeçalho */
 * {
     margin: 0;
@@ -13,7 +16,7 @@ body, html {
 }
 /* botões do cabeçalho */
 a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: 0.3s;
     font: bolder;
@@ -34,7 +37,8 @@ nav{
     align-items: center;
     height: 8vh;
     font-family: Arial;
-    box-shadow: #d6d6d6 0px 0px 10px;
+    background-color: #40b671;
+    box-shadow: #126b65 0px 0px 10px;
 }
 .nav-list{
     list-style: none;
@@ -54,7 +58,7 @@ nav{
 .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: black;
+    background: rgb(255, 255, 255);
     margin: 8px;
     transition: 0.3s;
 }
@@ -69,7 +73,7 @@ nav{
         right: 0;
         width: 50vw;
         height: 92vh;
-        background: #FFFFFF;
+        background: #16A79D;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -111,9 +115,7 @@ nav{
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
-header {
-    grid-area: header;
-}
+
 /* h1{
     border-radius: 5px;
     padding: 10px;
@@ -121,13 +123,7 @@ header {
     background-color: #8bbadb;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 } */
-h2 {
-    border-radius: 5px;
-    padding: 10px;
-    margin: 30px;
-    background-color: #8bbadb;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+
 .nav {
     position: fixed;
     bottom: 0;
@@ -143,51 +139,50 @@ h2 {
     display: flex;
 }
 
+.container{
+    position: relative;
+    padding: 10px;
+}
 .row{
     padding: 40px;
-    position: absolute;
+    position: relative;
     width: auto;
     height: 300;
     margin: 27px;
-    background: #ECECEC;
+    background: #CF4858;
     border-radius: 15px;
     text-align: start;
-    font-stretch: ;
+    color: white;
 }
 .row2 {
     padding: 40px;
     position: relative;
-    top: 290px;
-    width: 50%;
-    height: 50%;
+    width: auto;
+    height: auto;
     margin: 27px;
-    background: #ECECEC;
+    background: #6F9EB0;
     border-radius: 15px;
     text-align: start;
-    align-self: flex-end;
 }
+
 .row3 {
     padding: 40px;
     position: relative;
-    top: 290px;
-    width: 50%;
-    height: 300;
+    width: auto;
+    height: auto;
     margin: 27px;
-    background: #ECECEC;
+    background: #F6624A;
     border-radius: 15px;
     text-align: start;
-    align-self: flex-end;
 }
+
 .row4 {
     padding: 40px;
     position: relative;
-    top: 10%;
-    left: 56%;
     width: auto;
-    height: 300;
+    height: auto;
     margin: 27px;
-    background: #ECECEC;
     border-radius: 15px;
     text-align: start;
-    align-self: flex-end;
+    background: #F4AC42;
 }
