@@ -30,7 +30,7 @@ nav{
     height: 8vh;
     font-family: Arial;
     background-color: #40b671;
-    box-shadow: #126b65 0px 0px 10px;
+    box-shadow: #126b6577 0px 0px 10px;
 }
 .nav-list{
     list-style: none;
@@ -66,7 +66,7 @@ nav{
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 50vw;
+        width: 100vw;
         height: 92vh;
         background: #40b671;
         flex-direction: column;
@@ -111,14 +111,6 @@ nav{
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
-/* h1{
-    border-radius: 5px;
-    padding: 10px;
-    margin: 30px;
-    background-color: #8bbadb;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-} */
-
 .nav {
     position: fixed;
     bottom: 0;
@@ -137,102 +129,76 @@ nav{
 .container{
     display: flex;
     position: relative;
-}/*
-.row{
-    padding: 20px;
-    position: relative;
-    width: auto;
-    height: 300;
-    margin: 27px;
-    background: #CF4858;
-    border-radius: 15px;
-    text-align: start;
-    color: white;
 }
-.row2 {
-    padding: 20px;
-    position: relative;
-    width: auto;
-    height: auto;
-    margin: 27px;
-    background: #6F9EB0;
-    border-radius: 15px;
-    text-align: start;
-}
-
-.row3 {
-    padding: 20px;
-    position: relative;
-    width: auto;
-    height: auto;
-    margin: 27px;
-    background: #F6624A;
-    border-radius: 15px;
-    text-align: start;
-}
-
-.row4 {
-    padding: 20px;
-    position: relative;
-    width: auto;
-    height: auto;
-    margin: 27px;
-    border-radius: 15px;
-    text-align: start;
-    background: #F4AC42;
-} */
-
 .row {
     display: flex;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-width: 320px;
 }
 /* Main column */
 .main {
     flex: 70%;
     padding: 20px;
     width: auto;
-    margin: 27px;
-    background: #F4AC42;
     border-radius: 15px;
     text-align: start;
     color: white;
 }
-  #blockOne {
+#blockOne {
     margin: 27px;
     padding: 20px;
-    background: #40b671;
+    background: #F4AC42;
     border-radius: 15px;
     text-align: start;
     color: white;
-  }
-  #blockTwo {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#blockOne:hover {
+    background: #cf9134;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#blockTwo {
     padding: 20px;
     margin: 27px;
     background: #CF4858;
     border-radius: 15px;
     text-align: start;
     color: white;
-  }
-  #blockThree {
-    padding: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#blockTwo:hover {
+    background: #922f3b;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+#blockThree {
     margin: 27px;
+    padding: 20px;
     background: #6F9EB0;
     border-radius: 15px;
     text-align: start;
-  }
-  #blockFour {
-    padding: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#blockThree:hover {
+    background: #558497;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+#blockFour {
     margin: 27px;
+    padding: 20px;
     background: #F6624A;
     border-radius: 15px;
     text-align: start;
-  }
-  .side {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    
+}
+#blockFour:hover {
+    background: #d3533f;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.side {
     flex: 30%;
     padding: 20px;
     width: auto;
-    margin: 27px;
-    background: #F4AC42;
     border-radius: 15px;
     text-align: start;
     color: white;
@@ -244,4 +210,6 @@ nav{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     text-align: center;
+    box-shadow: #126b6577 0px 0px 10px;
+    border-radius: 15px 15px 0px 0px;
 }
