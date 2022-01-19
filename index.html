@@ -9,15 +9,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <!-- <img src="logo.svg" alt="Logo do projeto" class="logo"> -->
-        <h1 class="logo-extenso"><strong>SAE</strong> <span>Campus Quissamã</span></h1>
-        <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item" href="index.html">Início</a>
-            <a class="cabecalho-menu-item" href="perguntas.html">Tire sua dúvida</a>
-            <a class="cabecalho-menu-item" href="oProjeto.html">O projeto</a>
-            <a class="cabecalho-menu-item" href="contatos.html">Contatos</a>
+      <header id="header">
+        <a id="logo" href="/"><strong>SAE</strong> Campus Quissamã</a>
+        <nav id="nav">
+            <button id="btn-mobile" aria-controls="menu" aria-haspopup="true" aria-label="Abrir menu" aria-expanded="false">Menu
+
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="/">Início</a></li>
+                <li><a href="perguntas.html">Tire sua dúvida</a></li>
+                <li><a href="oProjeto.html">O projeto</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
         </nav>
+    </header>
+    <!-- <header class="cabecalho">
+        <!-- <img src="logo.svg" alt="Logo do projeto" class="logo"> -->
+        
     </header>
     <div class="row">
         <div class="coluna-esquerda">
@@ -54,34 +63,29 @@
           </div>
         </div>
       </div>
-<!--     <main class="conteudo">
-        <section class="conteudo-principal">
-            <div class="conteudo-principal-item">
-                <h2>Pergunta 1</h2>
-                <p>Espaço da resposta</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ab nemo maiores incidunt eius harum sapiente voluptas possimus nobis delectus! Perferendis porro quasi velit aperiam obcaecati adipisci itaque aliquam totam!</p>
-            </div>
-            <div class="conteudo-principal-item">
-                <h2>Pergunta 2</h2>
-                <p>Espaço da resposta</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ratione provident ab quod beatae similique laborum nostrum placeat repellat, fugiat odit at nesciunt cupiditate totam. Cumque et adipisci odit obcaecati!</p>
-            </div>
-        </section>
-        <section class="conteudo-secundario">
-            <div class="conteudo-secundario-item">
-                <h2>Noticia 1</h2>
-                <p>Espaço da resposta</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam alias doloribus magni a corporis pariatur quis, consequuntur fugiat qui odio. Illo autem voluptatum placeat odit non deleniti ut assumenda doloremque.</p>
-            </div>
-            <div class="conteudo-secundario-item">
-                <h2>Noticia 2</h2>
-                <p>Espaço da resposta</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo provident ullam iste aspernatur, assumenda fugiat eveniet perferendis, veritatis soluta blanditiis modi, vitae minima ad aut rem at quisquam architecto animi.</p>
-            </div>
-        </section>
-    </main> -->
     <footer class="rodape">
         <p class="rodape-mensagem">Feito por alunos, para alunos.❤️</p>
     </footer>
+    <script>
+      const btnMobile = document.getElementById('btn-mobile');
+  
+      function toggleMenu(event){
+          if (event.type === 'touchstart') {
+              event.preventDefault();
+          }
+          const nav = document.getElementById('nav');
+          nav.classList.toggle('active');
+          const active = nav.classList.contains('active')
+          event.currentTarget.setAttribute('aria-expanded', active);
+          if(active){
+              event.currentTarget.setAttribute('aria-label', 'Fechar menu')
+          } else {
+              event.currentTarget.setAttribute('aria-label', 'Abrir menu')
+          }
+      }
+  
+      btnMobile.addEventListener('click', toggleMenu);
+      btnMobile.addEventListener('touchstart', toggleMenu);
+  </script>
 </body>
 </html>

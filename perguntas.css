@@ -118,7 +118,11 @@ textarea {
     color: #0A4014;
     border-radius: 8px;
 }
-
+#mensagem {
+    font-family: oswald;
+    font-size: 18px;
+    font-weight: normal;
+}
 .submit-button {
     font-family: oswald;
     padding: 15px;

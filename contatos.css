@@ -70,7 +70,6 @@ body {
     text-transform: uppercase;
 }
 .conteudo a {
-    color: #0A4014;
     text-decoration: none;
 }
 .conteudo h2 {
@@ -89,6 +88,11 @@ body {
     padding: 8px;
     text-align: center;
 }
+.link a {
+    color: #0A4014;
+    text-decoration: none;
+}
+
 .contatos {
     display: flex;
     flex-direction: column;
@@ -96,6 +100,9 @@ body {
     color: #0A4014;
     border-radius: 8px;
     padding: 8px;
+}
+.contatos a {
+    color: #0A4014;
 }
 .rodape {
     position: bottom;
