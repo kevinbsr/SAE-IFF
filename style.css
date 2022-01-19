@@ -16,17 +16,6 @@ body {
     justify-content: center;
 }
 
-.cabecalho {
-    display: flex;
-    /* flex-direction: row */
-    align-items: center;
-    justify-content: space-around;
-    padding: 24px;
-    font-size: 28px;
-    text-transform: uppercase;
-    color: #0A4014;
-}
-
 body, ul {
     margin: 0px;
     padding: 0px;
@@ -98,12 +87,15 @@ a {
     #btn-mobile {
         display: flex;
         padding: .5rem 1rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
         border: none;
         background: none;
         cursor: pointer;
         gap: .5rem;
         color: #0A4014;
+        font-weight: lighter;
+        font-family: oswald;
+        align-items: center;
     }
     #hamburguer{
         display: block;
