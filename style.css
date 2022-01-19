@@ -60,7 +60,7 @@ body {
     color: #0A4014;
     text-decoration: underline;
 }
-.conteudo {
+/* .conteudo {
     margin-bottom: 48px;
     border-top: 1px solid #0A4014;
     display: flex;
@@ -75,8 +75,8 @@ body {
     align-items: flex-start;
     padding: 24px;
     margin: 16px;
-    /* background-color: #d8d8d8;
-    color: rgb(32, 32, 32); */
+    background-color: #d8d8d8;
+    color: rgb(32, 32, 32);
     border-radius: 8px;
 }
 
@@ -107,7 +107,7 @@ body {
     color: #D7FFDE;
     border-radius: 8px;
 }
-
+ */
 .rodape {
     position: bottom;
     left: 0;
@@ -118,3 +118,62 @@ body {
     font-size: 16px;
     text-align: center;
 }
+.row{
+    padding: 12px;
+    border-top: 1px solid #0A4014;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.coluna-esquerda {   
+    float: left;
+    width: 75%;
+    color: #D7FEDF;
+    border-radius: 8px;
+  }
+  
+  /* Right column */
+  .coluna-direita {
+    float: left;
+    width: 25%;
+    background-color: #EBFFEE;
+    padding-left: 20px;
+    color: #D7FEDF;
+    border-radius: 8px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: rgb(38, 83, 34);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: #17832B;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .coluna-esquerda, .coluna-direita {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
