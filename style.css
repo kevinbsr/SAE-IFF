@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=The+Nautigal&display=swap');
 
+/* ajustes gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-
+/* ajustes do corpo */
 body {
     font-size: 100%;
     font-family: oswald;
@@ -15,7 +16,7 @@ body {
     justify-content: center;
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     /* flex-direction: row */
     align-items: center;
@@ -26,17 +27,6 @@ body {
     color: #0A4014;
 }
 
-.logo-extenso {
-    font-size: 38px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    color: #0A4014;
-}
-
-.logo {
-    width: 50px;
-    height: 50px;
-}
 body, ul {
     margin: 0px;
     padding: 0px;
@@ -46,21 +36,23 @@ a {
     text-decoration: none;
     font-family: oswald;
 }
-a:hover {
+#menu a:hover {
     background-color: rgba(0, 0, 0, .05);
 }
 #logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: lighter;
     text-transform: uppercase;
 }
 #header {
+    font-size: 1.5rem;
+    text-transform: uppercase;
     box-sizing: border-box;
     height: 70px;
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #EBFFEE;
 }
 #menu {
@@ -76,6 +68,9 @@ a:hover {
     display: none;
 }
 @media (max-width: 767px) {
+    #logo {
+        font-size: 1.2rem;
+    }
     #menu {
         display: block;
         position: absolute;
@@ -88,6 +83,7 @@ a:hover {
         height: 0px;
         visibility: hidden;
         overflow-y: hidden;
+        color: #0A4014;
     }
     #nav.active #menu {
         height: calc(100vh - 70px);
@@ -107,6 +103,7 @@ a:hover {
         background: none;
         cursor: pointer;
         gap: .5rem;
+        color: #0A4014;
     }
     #hamburguer{
         display: block;
@@ -237,7 +234,7 @@ a:hover {
     clear: both;
   }
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .coluna-esquerda, .coluna-direita {   
       width: 100%;
       padding: 0;
