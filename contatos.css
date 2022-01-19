@@ -24,6 +24,7 @@ body {
     font-size: 28px;
     text-transform: uppercase;
     color: #0A4014;
+    border-bottom: 1px solid #0A4014;
 }
 
 .logo-extenso {
@@ -56,65 +57,57 @@ body {
     color: #0A4014;
     text-decoration: none;
 }
-.cabecalho-menu-item:active {
-    color: #0A4014;
-    text-decoration: underline;
-}
 .conteudo {
-    margin-bottom: 48px;
-    border-top: 1px solid #0A4014;
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-}
-
-.conteudo-principal {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    align-items: flex-start;
-    padding: 24px;
-    margin: 16px;
-    /* background-color: #d8d8d8;
-    color: rgb(32, 32, 32); */
-    border-radius: 8px;
-}
-
-.conteudo-principal-item {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    background-color: #17832B;
+    background-color:#17832B;
     color: #D7FFDE;
+    font-size: 24px;
+    width: 70%;
+    margin: 16px auto;
     border-radius: 8px;
+    padding: 24px;
+    text-transform: uppercase;
 }
-
-.conteudo-secundario {
+.conteudo a {
+    color: #0A4014;
+    text-decoration: none;
+}
+.conteudo h2 {
+    text-align: center;
+}
+.conteudo li {
+    list-style: none;
+}
+.link {
+    background-color: #0A4014;
+    border-radius: 8px;
+    margin: 12px auto;
+    background-color: #EBFFEE;
+    color: #0A4014;
+    text-decoration: none;
+    padding: 8px;
+    text-align: center;
+}
+.contatos {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    align-items: flex-start;
-    padding: 24px;
-    margin: 16px;
+    background-color: #EBFFEE;
+    color: #0A4014;
     border-radius: 8px;
+    padding: 8px;
 }
-
-.conteudo-secundario-item {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    background-color: #17832B;
-    color: #D7FFDE;
-    border-radius: 8px;
-}
-
 .rodape {
     position: bottom;
     left: 0;
     bottom: 0;
+    width: 100%;
     background-color: #EBFFEE;
     padding: 12px;
     border-top: 1px solid #0A4014;
+}
+
+.rodape-mensagem {
     font-size: 16px;
     text-align: center;
 }

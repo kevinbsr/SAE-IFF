@@ -1,0 +1,219 @@
+header {
+    grid-area: header;
+}
+/* cabeçalho */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+/* botões do cabeçalho */
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+    font: bolder;
+}
+a:hover{
+    opacity: 0.7;
+}
+/* botão principal */
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+/* conteudo da barra de navegação */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    font-family: Arial;
+    background-color: #40b671;
+    box-shadow: #126b6577 0px 0px 10px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+/* conteudo do menu mobile */
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+    .row, .navbar {
+        flex-direction: column;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 100vw;
+        height: 92vh;
+        background: #40b671;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        font-size: 21pt;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #8bbadb;
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    position: relative;
+}
+.row {
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-width: 320px;
+}
+/* Main column */
+.main {
+    flex: 70%;
+    padding: 20px;
+    width: auto;
+    border-radius: 15px;
+    text-align: start;
+    color: white;
+}
+#blockOne {
+    margin: 27px;
+    padding: 20px;
+    background: #F4AC42;
+    border-radius: 15px;
+    text-align: start;
+    color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#blockOne:hover {
+    background: #cf9134;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#blockTwo {
+    padding: 20px;
+    margin: 27px;
+    background: #CF4858;
+    border-radius: 15px;
+    text-align: start;
+    color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#blockTwo:hover {
+    background: #922f3b;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+#blockThree {
+    margin: 27px;
+    padding: 20px;
+    background: #6F9EB0;
+    border-radius: 15px;
+    text-align: start;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+#blockThree:hover {
+    background: #558497;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+#blockFour {
+    margin: 27px;
+    padding: 20px;
+    background: #F6624A;
+    border-radius: 15px;
+    text-align: start;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    
+}
+#blockFour:hover {
+    background: #d3533f;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+.side {
+    flex: 30%;
+    padding: 20px;
+    width: auto;
+    border-radius: 15px;
+    text-align: start;
+    color: white;
+}
+.footer {
+    flex: 100%;
+    background-color: #40b671;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-align: center;
+    box-shadow: #126b6577 0px 0px 10px;
+}

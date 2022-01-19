@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tire sua dúvida</title>
+    <link rel="stylesheet" href="perguntas.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <!-- <img src="logo.svg" alt="Logo do projeto" class="logo"> -->
+        <h1 class="logo-extenso"><strong>SAE</strong> <span>Campus Quissamã</span></h1>
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="/pt2/index.html">Início</a>
+            <a class="cabecalho-menu-item" href="perguntas.html">Tire sua dúvida</a>
+            <a class="cabecalho-menu-item" href="oProjeto.html">O projeto</a>
+            <a class="cabecalho-menu-item" href="contatos.html">Contatos</a>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <fieldset class="principal">
+                <div class="principal-nome">
+                    <label>Digite seu nome *</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="principal-email">
+                    <label>Digite seu e-mail *</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="mensagem">
+                    <label>Escreva sua dúvida!</label>
+                    <textarea name="mensagem" id="mensagem" required></textarea>
+                </div>
+                <p id="alerta">Caro aluno, nenhum dado pessoal informado neste formulário será divulgado ou exposto de qualquer forma. Esteja ciente de que apenas a pergunta estará sujeita à publicação no mural do site, afim de colaborar com outros alunos do campus que possam ter as mesmas dúvidas. As perguntas poderão sofrer reformulações para uma melhor compreensão.</p>
+                <button type="submit" class="submit-button">Enviar</button>
+                </fieldset>
+        </form>
+    </main>
+    <footer class="rodape">
+        <p class="rodape-mensagem">Feito por alunos, para alunos.❤️</p>
+    </footer>
+</body>
+</html>

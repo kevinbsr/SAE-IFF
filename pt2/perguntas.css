@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=The+Nautigal&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;   
+}
+body {
+    font-size: 100%;
+    font-family: oswald;
+    background-color: #EBFFEE;
+    color: #0A4014;
+    justify-content: center;
+}
+input {
+    border: none;
+    border-bottom: 1px solid #0A4014;
+    background-color: transparent;
+    color: #0A4014;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: start;
+    width: 100%;
+    padding: 8px;
+}
+textarea {
+    border: none;
+    border-bottom: 1px solid #0A4014;
+    background-color: transparent;
+    color: #0A4014;
+    font-weight: 800;
+    text-align: start;
+    width: 100%;
+    padding: 8px;
+    resize: vertical;
+    height: auto;
+    width: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    /* flex-direction: row */
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #0A4014;
+    border-bottom: 1px solid #0A4014;
+}
+.logo-extenso {
+    font-size: 38px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #0A4014;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+    color: #0A4014;
+}
+.cabecalho-menu-item {
+    font-weight: 400;
+}
+.cabecalho-menu-item:hover {
+    color: #17832B;
+    text-decoration: underline;
+}
+.cabecalho a {
+    color: #0A4014;
+    text-decoration: none;
+}
+.principal {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    padding: 24px;
+    margin: 16px auto;
+    border-radius: 8px;
+    background-color: #17832B;
+    width: 70%;
+    height: auto;
+    border: 0;
+    
+}
+.principal-nome {
+    width: 80vh ;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    background-color: #EBFFEE;
+    color: #0A4014;
+    border-radius: 8px;
+}
+.principal-email {
+    width: 80vh ;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    background-color: #EBFFEE;
+    color: #0A4014;
+    border-radius: 8px;
+}
+.mensagem {
+    width: 80vh ;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    background-color: #EBFFEE;
+    color: #0A4014;
+    border-radius: 8px;
+}
+
+.submit-button {
+    font-family: oswald;
+    padding: 15px;
+    font-size: 28px;
+    text-transform: uppercase;
+    background-color: #EBFFEE;
+    color: #0A4014;
+    border-radius: 8px;
+    border: 0;
+}
+
+.submit-button:hover {
+    background-color: #0A4014;
+    color: #EBFFEE;
+    cursor: pointer;
+}
+.rodape {
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #EBFFEE;
+    padding: 12px;
+    border-top: 1px solid #0A4014;
+}
+
+.rodape-mensagem {
+    font-size: 16px;
+    text-align: center;
+}
+
+#alerta {
+    color: #EBFFEE;
+    width: 80vh;
+    font-size: 12px;
+}
