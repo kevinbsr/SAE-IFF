@@ -64,6 +64,7 @@ a {
     align-items: center;
     justify-content: space-around;
     background-color: #EBFFEE;
+    border-bottom: 1px solid #0A4014;
 }
 /* ajustes dos links menu */
 #menu {
