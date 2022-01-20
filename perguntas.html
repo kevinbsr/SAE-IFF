@@ -6,30 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tire sua dúvida</title>
     <link rel="stylesheet" href="perguntas.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=The+Nautigal&display=swap');
+        body {font-family: oswald;}
+        * {box-sizing: border-box;}
+        main {
+            background-color: #EBFFEE;
+        }
+        input[type=text], input[type=email], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+          font-family: oswald;
+        }
+        
+        input[type=submit] {
+          background-color: #EBFFEE;
+          color: #0A4014;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          font-family: oswald;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #0A4014;
+          color: #EBFFEE ;
+        }
+        
+        .container {
+          border-radius: 8px;
+          background-color: #17832B;
+          color: #ffff;
+          padding: 20px;
+          margin: 10px;
+        }
+        </style>
 </head>
 <body>
-    <header class="cabecalho">
-        <!-- <img src="logo.svg" alt="Logo do projeto" class="logo"> -->
-        <h1 class="logo-extenso"><strong>SAE</strong> <span>Campus Quissamã</span></h1>
-        <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item" href="index.html">Início</a>
-            <a class="cabecalho-menu-item" href="perguntas.html">Tire sua dúvida</a>
-            <a class="cabecalho-menu-item" href="oProjeto.html">O projeto</a>
-            <a class="cabecalho-menu-item" href="contatos.html">Contatos</a>
+    <header id="header">
+        <a id="logo" href="index.html"><strong>SAE</strong> Campus Quissamã</a>
+        <nav id="nav">
+            <button id="btn-mobile" aria-controls="menu" aria-haspopup="true" aria-label="Abrir menu" aria-expanded="false">MENU
+
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="perguntas.html">Tire sua dúvida</a></li>
+                <li><a href="oProjeto.html">O projeto</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
         </nav>
     </header>
-    <main>
+    <!--  <main>
         <form>
-            <fieldset class="principal">
-                <div class="principal-nome">
+            <fieldset class="formulario">
+                <div class="formulario-nome">
                     <label>Digite seu nome *</label>
                     <input type="text" name="nome" id="nome" required>
                 </div>
-                <div class="principal-email">
+                <div class="formulario-email">
                     <label>Digite seu e-mail *</label>
                     <input type="email" name="email" id="email" required>
                 </div>
-                <div class="mensagem">
+                <div class="formulario-mensagem">
                     <label>Escreva sua dúvida!</label>
                     <textarea name="mensagem" id="mensagem" required></textarea>
                 </div>
@@ -37,7 +84,44 @@
                 <button type="submit" class="submit-button">Enviar</button>
                 </fieldset>
         </form>
+    </main>-->
+    <main>
+        <div class="container">
+            <form action="/action_page.js">
+              <label for="name">SEU NOME</label>
+              <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+        
+              <label for="email">SEU E-MAIL</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        
+              <label for="subject">SUA DÚVIDA</label>
+              <textarea id="subject" name="subject" placeholder="Nos escreva a sua dúvida!" style="height:200px" required></textarea>
+
+              <input type="submit" value="ENVIAR">
+            </form>
+          </div>
     </main>
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+    
+        function toggleMenu(event){
+            if (event.type === 'touchstart') {
+                event.preventDefault();
+            }
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+            const active = nav.classList.contains('active')
+            event.currentTarget.setAttribute('aria-expanded', active);
+            if(active){
+                event.currentTarget.setAttribute('aria-label', 'Fechar menu')
+            } else {
+                event.currentTarget.setAttribute('aria-label', 'Abrir menu')
+            }
+        }
+    
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+    </script>
     <footer class="rodape">
         <p class="rodape-mensagem">Feito por alunos, para alunos.❤️</p>
     </footer>

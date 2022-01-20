@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=The+Nautigal&display=swap');
+
+/* ajustes gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;   
+    text-decoration: none;
 }
-body {
+/* ajustes do corpo */
+/* body {
     font-size: 100%;
     font-family: oswald;
     background-color: #EBFFEE;
@@ -13,83 +16,151 @@ body {
     justify-content: center;
 }
 input {
+    display: flex;
+    flex-direction: column;
     border: none;
     border-bottom: 1px solid #0A4014;
     background-color: transparent;
     color: #0A4014;
     font-size: 18px;
-    font-weight: 400;
     text-align: start;
-    width: 100%;
-    padding: 8px;
+    padding: auto;
 }
 textarea {
+    display: flex;
+    flex-direction: column;
     border: none;
     border-bottom: 1px solid #0A4014;
     background-color: transparent;
     color: #0A4014;
-    font-weight: 800;
     text-align: start;
-    width: 100%;
     padding: 8px;
     resize: vertical;
-    height: auto;
-    width: 100%;
-}
-
-.cabecalho{
-    display: flex;
-    /* flex-direction: row */
-    align-items: center;
-    justify-content: space-around;
-    padding: 24px;
-    font-size: 28px;
-    text-transform: uppercase;
-    color: #0A4014;
-    border-bottom: 1px solid #0A4014;
-}
-.logo-extenso {
-    font-size: 38px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    color: #0A4014;
-}
-.logo {
-    width: 50px;
-    height: 50px;
-}
-.cabecalho-menu {
-    display: flex;
-    gap: 32px;
-    color: #0A4014;
-}
-.cabecalho-menu-item {
-    font-weight: 400;
-}
-.cabecalho-menu-item:hover {
-    color: #17832B;
-    text-decoration: underline;
-}
-.cabecalho a {
+} */
+/* personalização dos links do menu */
+a {
     color: #0A4014;
     text-decoration: none;
+    font-family: oswald;
 }
-.principal {
+/* hover dos botões do menu */
+#menu a:hover {
+    text-decoration: underline;
+}
+/* ajustes da logo */
+#logo {
+    font-size: 2rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+/* ajustes do cabeçalho */
+#header {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #EBFFEE;
+}
+/* ajustes dos links menu */
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+/* ajustes mobile */
+#btn-mobile {
+    display: none;
+}
+@media (max-width: 767px) {
+    /* logo no mobile */
+    #logo {
+        font-size: 1.2rem;
+    }
+    /* ajustes do menu mobile */
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background-color: #EBFFEE;
+        z-index: 10000;
+        transition: .6s;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        color: #0A4014;
+    }
+    /* apresentação do menu mobile */
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    /* ajustes visuais do menu mobile */
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    /* ajustes do botão de menu mobile */
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1.2rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: #0A4014;
+        font-weight: lighter;
+        font-family: oswald;
+        align-items: center;
+    }
+    #hamburguer{
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburguer::after, #hamburguer::before {
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        content: '';
+        display: block;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+.formulario {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    align-items: center;
     padding: 24px;
-    margin: 16px auto;
     border-radius: 8px;
     background-color: #17832B;
-    width: 70%;
-    height: auto;
     border: 0;
-    
 }
-.principal-nome {
-    width: 80vh ;
+.formulario-nome {
     padding: 15px;
     font-size: 28px;
     font-weight: lighter;
@@ -98,8 +169,7 @@ textarea {
     color: #0A4014;
     border-radius: 8px;
 }
-.principal-email {
-    width: 80vh ;
+.formulario-email {
     padding: 15px;
     font-size: 28px;
     font-weight: lighter;
@@ -108,8 +178,7 @@ textarea {
     color: #0A4014;
     border-radius: 8px;
 }
-.mensagem {
-    width: 80vh ;
+.formulario-mensagem {
     padding: 15px;
     font-size: 28px;
     font-weight: lighter;
@@ -158,4 +227,11 @@ textarea {
     color: #EBFFEE;
     width: 80vh;
     font-size: 12px;
+}
+/* ajustes de corpo para mobile */
+@media screen and (max-width: 767px) {
+    .form, .coluna-direita {   
+      width: 100%;
+      padding: 10px;
+    }
 }

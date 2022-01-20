@@ -15,24 +15,23 @@ body {
     color: #0A4014;
     justify-content: center;
 }
-
-body, ul {
-    margin: 0px;
-    padding: 0px;
-}
+/* personalização dos links do menu */
 a {
     color: #0A4014;
     text-decoration: none;
     font-family: oswald;
 }
+/* hover dos botões do menu */
 #menu a:hover {
-    background-color: rgba(0, 0, 0, .05);
+    text-decoration: underline;
 }
+/* ajustes da logo */
 #logo {
     font-size: 2rem;
     font-weight: lighter;
     text-transform: uppercase;
 }
+/* ajustes do cabeçalho */
 #header {
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -44,6 +43,7 @@ a {
     justify-content: space-around;
     background-color: #EBFFEE;
 }
+/* ajustes dos links menu */
 #menu {
     display: flex;
     list-style: none;
@@ -53,13 +53,16 @@ a {
     display: block;
     padding: .5rem;
 }
+/* ajustes mobile */
 #btn-mobile {
     display: none;
 }
 @media (max-width: 767px) {
+    /* logo no mobile */
     #logo {
         font-size: 1.2rem;
     }
+    /* ajustes do menu mobile */
     #menu {
         display: block;
         position: absolute;
@@ -74,16 +77,19 @@ a {
         overflow-y: hidden;
         color: #0A4014;
     }
+    /* apresentação do menu mobile */
     #nav.active #menu {
         height: calc(100vh - 70px);
         visibility: visible;
         overflow-y: auto;
     }
+    /* ajustes visuais do menu mobile */
     #menu a {
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, .05);
     }
+    /* ajustes do botão de menu mobile */
     #btn-mobile {
         display: flex;
         padding: .5rem 1rem;
@@ -123,54 +129,7 @@ a {
         top: -7px;
     }
 }
-/* .conteudo {
-    margin-bottom: 48px;
-    border-top: 1px solid #0A4014;
-    display: flex;
-    flex-direction: row;
-    gap: 0px;
-}
-
-.conteudo-principal {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    align-items: flex-start;
-    padding: 24px;
-    margin: 16px;
-    background-color: #d8d8d8;
-    color: rgb(32, 32, 32);
-    border-radius: 8px;
-}
-
-.conteudo-principal-item {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    background-color: #17832B;
-    color: #D7FFDE;
-    border-radius: 8px;
-}
-
-.conteudo-secundario {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    align-items: flex-start;
-    padding: 24px;
-    margin: 16px;
-    border-radius: 8px;
-}
-
-.conteudo-secundario-item {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    background-color: #17832B;
-    color: #D7FFDE;
-    border-radius: 8px;
-}
- */
+/* ajustes visuais rodapé */
 .rodape {
     position: bottom;
     left: 0;
@@ -181,12 +140,13 @@ a {
     font-size: 16px;
     text-align: center;
 }
+/* ajustes do corpo do site */
 .row{
     padding: 12px;
     border-top: 1px solid #0A4014;
 }
-/* Create two unequal columns that floats next to each other */
-/* Left column */
+/* ajustes do corpo desktop */
+/* coluna esquerda */
 .coluna-esquerda {   
     float: left;
     width: 75%;
@@ -194,7 +154,7 @@ a {
     border-radius: 8px;
   }
   
-  /* Right column */
+  /* coluna direita */
   .coluna-direita {
     float: left;
     width: 25%;
@@ -204,14 +164,14 @@ a {
     border-radius: 8px;
   }
   
-  /* Fake image */
+  /* imagens de ilustração */
   .fakeimg {
     background-color: rgb(38, 83, 34);
     width: 100%;
     padding: 20px;
   }
   
-  /* Add a card effect for articles */
+  /* efeitos dos cartões */
   .card {
     background-color: #17832B;
     padding: 20px;
@@ -219,13 +179,13 @@ a {
     border-radius: 8px;
   }
   
-  /* Clear floats after the columns */
+  /* ajustes do corpo */
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+/* ajustes de corpo para mobile */
 @media screen and (max-width: 767px) {
     .coluna-esquerda, .coluna-direita {   
       width: 100%;
