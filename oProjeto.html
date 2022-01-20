@@ -4,56 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O projeto</title>
+    <title>O Projeto</title>
     <link rel="stylesheet" href="oProjeto.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <!-- <img src="logo.svg" alt="Logo do projeto" class="logo"> -->
-        <h1 class="logo-extenso"><strong>SAE</strong> <span>Campus Quissamã</span></h1>
-        <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item" href="index.html">Início</a>
-            <a class="cabecalho-menu-item" href="perguntas.html">Tire sua dúvida</a>
-            <a class="cabecalho-menu-item" href="oProjeto.html">O projeto</a>
-            <a class="cabecalho-menu-item" href="contatos.html">Contatos</a>
+    <header id="header">
+        <a id="logo" href="index.html"><strong>SAE</strong> Campus Quissamã</a>
+        <nav id="nav">
+            <button id="btn-mobile" aria-controls="menu" aria-haspopup="true" aria-label="Abrir menu" aria-expanded="false">MENU
+
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="perguntas.html">Tire sua dúvida</a></li>
+                <li><a href="oProjeto.html">O projeto</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
-        <div class="descricao">
-            <h1>O projeto</h1>
-            <div class="texto">
-                <p>A ideia do projeto é criar um portal onde os alunos e servidores possam encontrar tudo o que precisam sobre o campus.<br><br>
-                O site conta com um formulário onde os alunos podem tirar suas dúvidas, e que, após respondidas, são publicadas no mural (de forma anônima), a fim de agilizar o processo de solução de dúvidas semelhantes que outros alunos possam ter. O site conta também com horários e datas importantes; uma aba com sites importantes como o próprio portal do IFF, Moodle, Classroom, e Acadêmico.
-                <br><br>
-                O objetivo é que o SAE facilite a vida do aluno no Campus, e também nas aulas on-line, fazendo com que os possíveis problemas e dúvidas, principalmente de novos alunos, possam ser solucionados de forma mais rápida.</p>
-            </div>
-            <div class="grupo">
-                <h1>Nosso time</h1>
-                <div class="perfis">
-                    <div class="linhaUm">
-                        <img id="fael" src="fotos/fael.png" alt="Rafael Viana">
-                        <p>Rafael Viana</p>
-                        <img id="isha" src="fotos/isha.png" alt="Ishabelli Maia">
-                        <p>Ishabelli Maia</p>
-                    </div>    
-                    <div class="linhaDois">
-                        <img id="gusta" src="fotos/gusta.png" alt="Gustavo">
-                        <p>Gustavo Santos</p>
-                        <img id="kevin" src="fotos/kevin.png" alt="Kevin Benevides">
-                        <p>Kevin Benevides</p>
-                    </div>
-                    <div class="linhaTres">
-                        <img id="dri" src="fotos/dri.png" alt="Driely Ribeiro">
-                        <p>Driely Ribeiro</p>
-                        <img id="vitu" src="fotos/vitu.png" alt="Vitor Hugo">
-                        <p>Vitor Hugo</p>
-                    </div>
-                </div>
+    <div class="about-section">
+        <h1>O projeto</h1>
+        <p>A ideia do projeto é criar um portal onde os alunos e servidores possam encontrar tudo o que precisam sobre o campus.</p>
+        <p>O site conta com um formulário onde os alunos podem tirar suas dúvidas, e que, após respondidas, são publicadas no mural (de forma anônima), a fim de agilizar o processo de solução de dúvidas semelhantes que outros alunos possam ter. O site conta também com horários e datas importantes; uma aba com sites importantes como o próprio portal do IFF, Moodle, Classroom, e Acadêmico.</p>
+        <p>O objetivo é que o SAE facilite a vida do aluno no Campus, e também nas aulas on-line, fazendo com que os possíveis problemas e dúvidas, principalmente de novos alunos, possam ser solucionados de forma mais rápida.</p>
+    </div>
+    
+    <h2 style="text-align:center; text-transform: uppercase; color: #0A4014; font-family: oswald;" id="nossoTime">Nosso time</h2>
+    <div class="row">
+        <div class="column">
+        <div class="card">
+            <img src="fotos/kevin-member.png" alt="Kevin Benevides" style="width:100%">
+            <div class="container">
+            <h2>Kevin Benevides</h2>
+            <p class="title">CEO & Founder</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>kb.kevinbenevides@gmail.com</p>
+            <p><button class="button">Entrar em contato</button></p>
             </div>
         </div>
+        </div>
+    
+        <div class="column">
+        <div class="card">
+            <img src="fotos/fael-member.png" alt="Rafael Viana" style="width:100%">
+            <div class="container">
+            <h2>Rafael Viana</h2>
+            <p class="title">Art Director</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>rafael@example.com</p>
+            <p><button class="button">Entrar em contato</button></p>
+            </div>
+        </div>
+        </div>
+        
+        <div class="column">
+        <div class="card">
+            <img src="fotos/isha-member.png" alt="Ishabelli Maia" style="width:100%">
+            <div class="container">
+            <h2>Ishabelli Maia</h2>
+            <p class="title">Designer</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>ishabelli@example.com</p>
+            <p><button class="button">Entrar em contato</button></p>
+            </div>
+        </div>
+        </div>
+        
+        <div class="column">
+            <div class="card">
+                <img src="fotos/dri-member.png" alt="Driely Ribeiro" style="width:100%">
+                <div class="container">
+                <h2>Driely Ribeiro</h2>
+                <p class="title">Designer</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>driely@example.com</p>
+                <p><button class="button">Entrar em contato</button></p>
+                </div>
+            </div>
+            </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="fotos/vitu-member.png" alt="Vitor Hugo" style="width:100%">
+                <div class="container">
+                <h2>Vitor Hugo</h2>
+                <p class="title">Logo Maker</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>vitu@example.com</p>
+                <p><button class="button">Entrar em contato</button></p>
+                </div>
+        </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="fotos/gusta-member.png" alt="Gustavo" style="width:100%">
+                <div class="container">
+                <h2>Gustavo Santos</h2>
+                <p class="title">The streamer</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>gustavo@example.com</p>
+                <p><button class="button">Entrar em contato</button></p>
+                </div>
+        </div>
+        </div>
+    </div>
     </main>
+
     <footer class="rodape">
         <p class="rodape-mensagem">Feito por alunos, para alunos.❤️</p>
     </footer>
+
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+    
+        function toggleMenu(event){
+            if (event.type === 'touchstart') {
+                event.preventDefault();
+            }
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+            const active = nav.classList.contains('active')
+            event.currentTarget.setAttribute('aria-expanded', active);
+            if(active){
+                event.currentTarget.setAttribute('aria-label', 'Fechar menu')
+            } else {
+                event.currentTarget.setAttribute('aria-label', 'Abrir menu')
+            }
+        }
+    
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+    </script>
 </body>
 </html>
