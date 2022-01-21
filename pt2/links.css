@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=The+Nautigal&display=swap');
 
+/* ajustes gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-
+/* ajustes do corpo */
+body {
+    font-size: 100%;
+    font-family: oswald;
+    background-color: #EBFFEE;
+    color: #0A4014;
+    justify-content: center;
+}
 /* personalização dos links do menu */
 a {
     color: #0A4014;
@@ -51,7 +59,7 @@ a {
 #btn-mobile {
     display: none;
 }
-@media (max-width: 795px) {
+@media (max-width: 767px) {
     /* logo no mobile */
     #logo {
         font-size: 1.2rem;
@@ -125,114 +133,69 @@ a {
 }
 
 body {
-    font-size: 100%;
-    font-family: oswald;
-    background-color: #EBFFEE;
-    color: #0A4014;
-    justify-content: center;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.cabecalho{
-    display: flex;
-    /* flex-direction: row */
-    align-items: center;
-    justify-content: space-around;
-    padding: 24px;
-    font-size: 28px;
-    text-transform: uppercase;
-    color: #0A4014;
-    border-bottom: 1px solid #0A4014;
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.logo-extenso {
-    font-size: 38px;
-    font-weight: lighter;
-    text-transform: uppercase;
-    color: #0A4014;
+.image-container {
+  text-align: center;
+  width: 100%;
 }
 
-.logo {
-    width: 50px;
-    height: 50px;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.cabecalho-menu {
-    display: flex;
-    gap: 32px;
-    color: #0A4014;
-}
-
-.cabecalho-menu-item {
-    font-weight: 400;
-}
-
-.cabecalho-menu-item:hover {
-    color: #17832B;
-    text-decoration: underline;
-}
-.cabecalho a {
-    color: #0A4014;
+.container a, li {
     text-decoration: none;
-}
-.conteudo {
-    display: flex;
-    flex-direction: column;
-    background-color:#17832B;
-    color: #D7FFDE;
-    margin: 16px;
-    border-radius: 8px;
-    padding: 24px;
-    text-transform: uppercase;
-}
-.conteudo a {
-    text-decoration: none;
-}
-.conteudo h2 {
-    text-align: center;
-}
-.conteudo li {
     list-style: none;
+    background-color: #0d4cc2;
+          color: #0A4014;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          font-family: oswald;
 }
-.image {
-    width: 100%;
-}
+
 .link {
-    background-color: #0A4014;
-    border-radius: 8px;
-    margin: 12px auto;
-    background-color: #EBFFEE;
-    color: #0A4014;
-    text-decoration: none;
-    padding: 8px;
-    text-align: center;
-}
-.link a {
-    color: #0A4014;
-    text-decoration: none;
+  min-width: 50% !important;
 }
 
-.contatos {
-    display: flex;
-    flex-direction: column;
-    background-color: #EBFFEE;
-    color: #0A4014;
-    border-radius: 8px;
-    padding: 8px;
+@media (min-width: 1200px) .container {
+  max-width: 1140px;
 }
-.contatos a {
-    color: #0A4014;
+@media (min-width: 992px) .container {
+  max-width: 960px;
 }
-.rodape {
-    position: bottom;
-    left: 0;
-    bottom: 0;
+@media (min-width: 768px) {
+.container {
+    max-width: 720px;
+  }
+
+.link {
     width: 100%;
-    background-color: #EBFFEE;
-    padding: 12px;
-    border-top: 1px solid #0A4014;
+  }
+}
+@media (min-width: 576px) {
+.container {
+    max-width: 540px;
+  }
 }
 
-.rodape-mensagem {
-    font-size: 16px;
-    text-align: center;
+.w3-purple, .w3-hover-purple:hover {
+color: #fff!important;
+background-color: rgba(39, 176, 46, 0.6) !important;
 }

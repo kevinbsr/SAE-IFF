@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="links.css">
+</head>
+<body>
+    <header id="header">
+    <a id="logo" href="index.html"><strong>SAE</strong> Campus Quissamã</a>
+        <nav id="nav">
+            <button id="btn-mobile" aria-controls="menu" aria-haspopup="true" aria-label="Abrir menu" aria-expanded="false">MENU
+
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="perguntas.html">Tire sua dúvida</a></li>
+                <li><a href="oProjeto.html">O projeto</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <ul>
+                <li><a href=""><button>Portal IFF</button></a>
+                <li><a href=""><button>Acadêmico IFF</button></a>
+                <li><a href=""><button>Moodle</button></a>
+                <li><a href=""><button>Classroom</button></a>
+                <li><a href=""><button>Suap IFF</button></a>
+                <li><a href=""><button>Discord</button></a>
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+    
+        function toggleMenu(event){
+            if (event.type === 'touchstart') {
+                event.preventDefault();
+            }
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+            const active = nav.classList.contains('active')
+            event.currentTarget.setAttribute('aria-expanded', active);
+            if(active){
+                event.currentTarget.setAttribute('aria-label', 'Fechar menu')
+            } else {
+                event.currentTarget.setAttribute('aria-label', 'Abrir menu')
+            }
+        }
+    
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+    </script>
+</body>
+</html>
